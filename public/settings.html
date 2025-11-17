@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Settings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin Panel</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="/dashboard" class="nav-item">
+                    <span class="nav-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="/users" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Users</span>
+                </a>
+                <a href="/settings" class="nav-item active">
+                    <span class="nav-icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="logoutBtn" class="btn btn-secondary btn-block">Logout</button>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Settings</h1>
+                <div class="user-info">
+                    <span id="userName">Admin</span>
+                </div>
+            </header>
+            
+            <div class="content-wrapper">
+                <div class="content-section">
+                    <div class="settings-card">
+                        <h2>Account Information</h2>
+                        <div id="accountInfo" class="info-grid">
+                            <div class="info-item">
+                                <label>Username:</label>
+                                <span id="settingsUsername">-</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Email:</label>
+                                <span id="settingsEmail">-</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Role:</label>
+                                <span id="settingsRole">-</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="settings-card">
+                        <h2>System Information</h2>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <label>Application:</label>
+                                <span>Admin Panel v1.0.0</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Environment:</label>
+                                <span>Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="settings.js"></script>
+</body>
+</html>
+
